@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,7 @@ export class NavBarComponent implements OnInit {
   constructor(public auth: AuthService) { }
 
   ngOnInit() {
-    console.log(process.env.FAUNA_KEY);
+    console.log(environment.FAUNA_KEY);
   }
 
 }
