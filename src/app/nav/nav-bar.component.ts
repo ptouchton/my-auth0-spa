@@ -11,6 +11,7 @@ export class NavBarComponent implements OnInit {
   constructor(public auth: AuthService) { }
 
   ngOnInit() {
+    console.log(process.env.FAUNA_KEY);
   }
 
 }
