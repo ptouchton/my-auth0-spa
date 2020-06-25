@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  FAUNA_KEY: ''
+  FAUNA_KEY: 'undefined'
 };
